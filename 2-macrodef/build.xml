@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<project name="server" default="main">
+    <target name="main">
+        <HelloAnt>Hello Ant</HelloAnt>
+    </target>
+
+    <!-- Parameter as text -->
+    <macrodef name="HelloAnt">
+        <text name="text"/>
+        <sequential>
+            <echo>@{text}</echo>
+        </sequential>
+    </macrodef>
+</project>
