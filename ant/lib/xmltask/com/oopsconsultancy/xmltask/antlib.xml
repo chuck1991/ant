@@ -1,0 +1,7 @@
+<antlib>
+    <taskdef
+        name="xml"
+        classname="com.oopsconsultancy.xmltask.ant.XmlTask"
+        onerror="ignore"/>
+</antlib>
+

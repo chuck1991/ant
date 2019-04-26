@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <project name="server" default="main">
-    <target name="main">
-        <echo>Hello Ant</echo>
-    </target>
+  <target name="main">
+    <echo>Hello Ant</echo>
+  </target>
+  
 </project>

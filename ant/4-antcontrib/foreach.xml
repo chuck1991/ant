@@ -1,0 +1,9 @@
+<project name="foreach">
+    <target name="main">
+        <for list="A,B,C" delimitor="," param="it" inheritall="true" inheritrefs="true" parallel="true" maxThreads="4" trim="true">
+            <sequential>
+                <echo>@{it}</echo>
+            </sequential>
+        </for>
+    </target>
+</project>

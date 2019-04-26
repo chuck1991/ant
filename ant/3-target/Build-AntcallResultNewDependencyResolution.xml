@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<project name="server" default="main">
+    <target name="main" depends="B,C">
+        <echo> main </echo>
+        <antcall target="B" />
+    </target>
+
+    <target name="B" depends="C">
+        <echo>B</echo>
+    </target>
+
+    <target name="C">
+        <echo>C</echo>
+    </target>
+    
+</project>
+
+<!--
+
+PS C:\Developing\repositories\github\ant\3-target> ant -f .\build.1.xml
+Buildfile: C:\Developing\repositories\github\ant\3-target\build.1.xml
+
+C:
+     [echo] C
+
+B:
+     [echo] B
+
+main:
+     [echo]  main
+
+C:
+     [echo] C
+
+B:
+     [echo] B
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+-->

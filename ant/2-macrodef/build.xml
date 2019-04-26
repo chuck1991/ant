@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<project name="server" default="main">
+    <target name="main">
+        <HelloAnt>Hello Ant</HelloAnt>
+        <echo> ${hello} </echo>
+    </target>
+
+    <!-- Parameter as text -->
+    <macrodef name="HelloAnt">
+        <text name="text"/>
+        <sequential>
+            <echo>@{text}</echo>
+            <property name="hello" value="world"/>
+        </sequential>
+    </macrodef>
+</project>
+
+<!--
+
+PS C:\Developing\repositories\github\ant\2-macrodef> ant -f .\build.xml
+Buildfile: C:\Developing\repositories\github\ant\2-macrodef\build.xml
+
+main:
+     [echo] Hello Ant
+     [echo]  world
+
+BUILD SUCCESSFUL
+Total time: 0 seconds
+
+-->

@@ -1,0 +1,52 @@
+<project name="XmlDemo" default="main">
+	<property name="libdir" value="../" />
+	<typedef file="../lib/xmltask.xml" />
+	<target name="main">
+
+
+		<condition property="aaa">
+			<available file="${basedir}/feature.xml"/>
+		</condition>
+		<echo> ${aaa}</echo>
+		<xml source="${basedir}/feature.xml" dest="output.xml">
+			<attr path="//copyright" attr="url" value="${newVersion}"/>
+		</xml>
+		<script language="groovy">
+			<classpath>
+				<fileset dir="C:\\Users\\kai\\Downloads\\apache-groovy-sdk-2.5.6\\groovy-2.5.6\\lib">
+					<include name="**/*.jar"/>
+				</fileset>
+			</classpath>
+			println("message is " + aaa)
+
+			def delivery = new XmlParser().parse('delivery.xml')
+			delivery.features.feature.collect{it.@id}.each{
+				def feature = new XmlParser().parse("${buildRepository}/${it}/feature.xml")
+				def plugins = feature.plugin.collect{it.@id}
+			}
+			plugins.addAll(delivery.platform.plugin.collect{it.@id})
+		</script>
+	</target>
+</project>
+
+<!--
+<target name="parsecategory">
+		<xml source="buildconfiguration/category.xml">
+			<call path="//category-def">
+				<param name="category" path="@name"/>
+				<actions>
+					<echo>@{category}</echo>
+					<xml source="buildconfiguration/category.xml">
+						<call path="//feature[category/@name='@{category}']">
+							<param name="featureId" path="@id"/>
+							<actions>
+								<echo> @{featureId} </echo>
+							</actions>
+						</call>
+					</xml>
+				</actions>
+			</call>
+		</xml>
+	</target>
+
+-->

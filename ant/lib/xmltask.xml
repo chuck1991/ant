@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<antlib>
+  <typedef name="xml" classname="com.oopsconsultancy.xmltask.ant.XmlTask">
+    <classpath>
+      <pathelement location="${libdir}/lib/xmltask.jar" />
+    </classpath>
+  </typedef>
+</antlib>

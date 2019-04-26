@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<project name="server" default="main">
+  <target name="main">
+    <echo>Hello Ant</echo>
+    <fileset dir="E:\\eclipse\\4.8\\plugins" id= "filexml">
+      <filename regex="org\.eclipse\.osgi_(\d+\.\d+\.\d+)(.*)\.jar"/>
+    </fileset >
+    <property name= "filexml" refid= "filexml" />
+    <echo>${filexml} </echo>
+
+    <dirset dir="E:\\eclipse\\4.8\\plugins" id="pde">
+      <filename regex="org\.eclipse\.pde\.build.(\d+\.\d+\.\d+)\.[a-zA-Z0-9]+"/>
+      <depth max="0"/>
+    </dirset>
+    
+    <property name= "pdefolder" refid= "pde" />
+    <echo>${pdefolder} </echo>
+
+  </target>
+</project>
