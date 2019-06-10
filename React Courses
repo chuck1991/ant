@@ -2,3 +2,6 @@
 * Semantic UI https://semantic-ui.com/
 * Faker https://github.com/marak/Faker.js/
 * Codesanbox https://codesandbox.io
+
+function component, easy to use
+class component, easy to organize codes, using state and lifecycle
