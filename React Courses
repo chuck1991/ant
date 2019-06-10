@@ -5,3 +5,9 @@
 
 function component, easy to use
 class component, easy to organize codes, using state and lifecycle
+
+## Get Geolocation
+window.navigator.geolocation.getCurrentPosition(
+    position => console.log(position),
+    error => console.log(error)
+  );
