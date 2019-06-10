@@ -18,5 +18,13 @@ State:
  can only be updated by setState
 
 setState({key:value}) won't delete anything from the state, merge or add new states into the original initial values
+Initial state inside constructor or instance creation in the class body
+class{
+state={}
+constructor(props){
+    super(props)
+    this.state={}
+    }
+}
 props, 
 Component.defaultProps={key:value} to add a default message for props if no value is given
