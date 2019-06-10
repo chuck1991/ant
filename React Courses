@@ -39,4 +39,6 @@ records list
 Arrow function will bind this automatically 
 function definition won't do it
 
+axios(3rd party) or fetch (built in)
+
 parent-children communication by invoking callback from children props
