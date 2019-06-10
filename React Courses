@@ -16,3 +16,5 @@ callback won't run before the creator function returns
 State:
  must be intialized when component is created
  can only be updated by setState
+
+setState({key:value}) won't delete anything from the state, merge or add new states into the original initial values
