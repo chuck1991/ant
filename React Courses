@@ -42,3 +42,11 @@ function definition won't do it
 axios(3rd party) or fetch (built in)
 
 parent-children communication by invoking callback from children props
+
+Image list css
+grid-gap: 0 10px
+grid-auto-rows: 10px
+
+grid-row-end: span 2;
+https://cssreference.io/property/grid-template-columns/
+https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/
