@@ -31,7 +31,8 @@ Component.defaultProps={key:value} to add a default message for props if no valu
 
 
 user event
-
+onFormSubmit 
+e.preventDefault()
 fetching data
 
 records list
@@ -50,3 +51,6 @@ grid-auto-rows: 10px
 grid-row-end: span 2;
 https://cssreference.io/property/grid-template-columns/
 https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/
+
+React.createRef() and pass it into the dom element
+https://reactjs.org/docs/refs-and-the-dom.html
