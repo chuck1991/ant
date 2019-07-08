@@ -1,0 +1,173 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/root.json",
+    "type": "object",
+    "title": "The Root Schema",
+    "required": [
+      "producers"
+    ],
+    "properties": {
+      "producers": {
+        "$id": "#/properties/producers",
+        "type": "array",
+        "title": "The Producers Schema",
+        "items": {
+          "$id": "#/properties/producers/items",
+          "type": "object",
+          "title": "The Items Schema",
+          "required": [
+            "email",
+            "username",
+            "displayname",
+            "description",
+            "profileNum",
+            "products"
+          ],
+          "properties": {
+            "email": {
+              "$id": "#/properties/producers/items/properties/email",
+              "type": "string",
+              "title": "The Email Schema",
+              "default": "",
+              "examples": [
+                "kai@foodla.nu"
+              ],
+              "pattern": "",
+              "format": "email"
+            },
+            "username": {
+              "$id": "#/properties/producers/items/properties/username",
+              "type": "string",
+              "title": "The Username Schema",
+              "default": "",
+              "examples": [
+                "xxxxxx"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "displayname": {
+              "$id": "#/properties/producers/items/properties/displayname",
+              "type": "string",
+              "title": "The Displayname Schema",
+              "default": "",
+              "examples": [
+                "Xxx Yyy"
+              ],
+              "pattern": "^(.*)$"
+            },
+            "description": {
+              "$id": "#/properties/producers/items/properties/description",
+              "type": "array",
+              "title": "The Description Schema",
+              "items": {
+                "$id": "#/properties/producers/items/properties/description/items",
+                "type": "string",
+                "title": "The Items Schema",
+                "default": "",
+                "examples": [
+                  "I'm kai",
+                  "I have to use a new line",
+                  "it's ok to use in this way"
+                ],
+                "pattern": "^(.*)$"
+              }
+            },
+            "profileNum": {
+              "$id": "#/properties/producers/items/properties/profileNum",
+              "type": "integer",
+              "title": "The Profilenum Schema",
+              "default": 0,
+              "examples": [
+                9
+              ]
+            },
+            "products": {
+              "$id": "#/properties/producers/items/properties/products",
+              "type": "array",
+              "title": "The Products Schema",
+              "items": {
+                "$id": "#/properties/producers/items/properties/products/items",
+                "type": "object",
+                "title": "The Items Schema",
+                "required": [
+                  "title",
+                  "pictureLinkName",
+                  "description",
+                  "latitude",
+                  "location",
+                  "longitude"
+                ],
+                "properties": {
+                  "title": {
+                    "$id": "#/properties/producers/items/properties/products/items/properties/title",
+                    "type": "string",
+                    "title": "The Title Schema",
+                    "default": "",
+                    "examples": [
+                      "product1 Xxx Yyy"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "pictureLinkName": {
+                    "$id": "#/properties/producers/items/properties/products/items/properties/pictureLinkName",
+                    "type": "string",
+                    "title": "The Picturelinkname Schema",
+                    "default": "",
+                    "examples": [
+                      "xxxx1"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "description": {
+                    "$id": "#/properties/producers/items/properties/products/items/properties/description",
+                    "type": "array",
+                    "title": "The Description Schema",
+                    "items": {
+                      "$id": "#/properties/producers/items/properties/products/items/properties/description/items",
+                      "type": "string",
+                      "title": "The Items Schema",
+                      "default": "",
+                      "examples": [
+                        "",
+                        ""
+                      ],
+                      "pattern": "^(.*)$"
+                    }
+                  },
+                  "latitude": {
+                    "$id": "#/properties/producers/items/properties/products/items/properties/latitude",
+                    "type": "number",
+                    "title": "The Latitude Schema",
+                    "default": 0.0,
+                    "examples": [
+                      57.71527546
+                    ]
+                  },
+                  "location": {
+                    "$id": "#/properties/producers/items/properties/products/items/properties/location",
+                    "type": "string",
+                    "title": "The Location Schema",
+                    "default": "",
+                    "examples": [
+                      "Eksjö N, Sverige"
+                    ],
+                    "pattern": "^(.*)$"
+                  },
+                  "longitude": {
+                    "$id": "#/properties/producers/items/properties/products/items/properties/longitude",
+                    "type": "number",
+                    "title": "The Longitude Schema",
+                    "default": 0.0,
+                    "examples": [
+                      15.0926599
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
