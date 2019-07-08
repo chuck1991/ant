@@ -1,0 +1,74 @@
+{
+  "producers": [
+    {
+      "email": "kai@foodla.nu",
+      "username": "xxxxxx",
+      "displayName": "Xxx Yyy",
+      "description": [
+        "I'm kai",
+        "I have to use a new line",
+        "it's ok to use in this way"
+      ],
+      "profileNum": 9,
+      "products": [
+        {
+          "title": "product1 Xxx Yyy",
+          "pictureLinkName": "xxxx1",
+          "description": [
+            "",
+            ""
+          ],
+          "latitude": 57.71527546,
+          "location": "Eksjö N, Sverige",
+          "longitude": 15.0926599
+        },
+        {
+          "title": "product2 Xxx Yyy",
+          "pictureLinkName": "xxxx2",
+          "description": [
+            "",
+            ""
+          ],
+          "latitude": 57.71527546,
+          "location": "Eksjö N, Sverige",
+          "longitude": 15.0926599
+        }
+      ]
+    },
+    {
+      "email": "kai@foodla.nu",
+      "username": "xxxxxx",
+      "displayName": "Xxx Yyy",
+      "description": [
+        "",
+        "",
+        ""
+      ],
+      "profileNum": 9,
+      "products": [
+        {
+          "title": "product1 Xxx Yyy",
+          "pictureLinkName": "xxxx1",
+          "description": [
+            "",
+            ""
+          ],
+          "latitude": 57.71527546,
+          "location": "Eksjö N, Sverige",
+          "longitude": 15.0926599
+        },
+        {
+          "title": "product2 Xxx Yyy",
+          "pictureLinkName": "xxxx2",
+          "description": [
+            "",
+            ""
+          ],
+          "latitude": 57.71527546,
+          "location": "Eksjö N, Sverige",
+          "longitude": 15.0926599
+        }
+      ]
+    }
+  ]
+}
